@@ -7,19 +7,9 @@ background: linear-gradient(to right, #595BA8 0%, #8184E8 100%);
 }
 
 
-.lupa{
-  background-image: url(./image/lupa.svg);
-  background-repeat:no-repeat;
-  height:35px;
-  width:35px;
-  background-position:auto;
-}
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
-
 .search {
   width: 100%;
+  left: 50%;
   position: relative;
   display: flex;
 }
