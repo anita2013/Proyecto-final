@@ -9,13 +9,13 @@ background: linear-gradient(to right, #595BA8 0%, #8184E8 100%);
 
 .search {
   width: 100%;
-  left: 50%;
+  right: 25%;
   position: relative;
   display: flex;
 }
 
 .searchTerm {
-  width: 40%;
+  width: 80%;
   border: 1px solid #595BA8;
   border-right: none;
   padding: 10px;
@@ -42,9 +42,14 @@ background: linear-gradient(to right, #595BA8 0%, #8184E8 100%);
 }
 
 /*Resize the wrap to see the search bar change!*/
-.wrap{
+.busqueda{
   width: 30%;
    top: 50%;
   left: 50%;
   
+}
+
+.carrito{
+
+    left: 30%;
 }
