@@ -9,7 +9,8 @@ background: linear-gradient(to right, #595BA8 0%, #8184E8 100%);
 
 .search {
   width: 100%;
-  right: 25%;
+  right: 10%;
+  padding: 1%;
   position: relative;
   display: flex;
 }
