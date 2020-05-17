@@ -50,7 +50,6 @@ background: linear-gradient(to right, #595BA8 0%, #8184E8 100%);
   
 }
 
-
 .social {
 
     position: fixed;
@@ -59,3 +58,9 @@ background: linear-gradient(to right, #595BA8 0%, #8184E8 100%);
 }
 
 
+
+
+a.estado:hover, a.estado:active {
+  background: rgb(209, 123, 213);
+ 
+}
