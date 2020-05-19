@@ -2,7 +2,15 @@ function validarRegistro() {
     let validado = true
     let mensaje = 'Por favor revise: <br>'
     let usuarios = document.forms['registro']
-    console.log(usuarios.elements)
+    const personas = {}
+
+    for (let element of usuarios.elements) {
+        if (element.id) {
+            if (element.id != 'contrasena2') {
+                personas[element.id] = element.value
+            }
+        }
+    }
     if (usuarios.name.value == '') {
         mensaje += '- Su nombre <br>'
         validado = false
@@ -43,8 +51,10 @@ function validarRegistro() {
         let alerta = document.getElementById('mensaje-modal')
         alerta.innerHTML = mensaje
         $('#alerta').modal('show')
+    } else {
+        let sesion = true
+        localStorage.setItem(personas.usuario, JSON.stringify(personas))
+        localStorage.setItem('sesion', JSON.stringify(sesion))
     }
-    delete usuarios.contrasena2
-    localStorage.setItem(usuarios.usuario.value, JSON.stringify(usuarios))
     return validado
 }
