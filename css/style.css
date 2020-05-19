@@ -75,3 +75,48 @@ a.estado:hover, a.estado:active {
   background: rgb(209, 123, 213);
  
 }
+
+
+
+/*FOOTER - redes sociales*/
+    
+    .derechos-reservados {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #d4d3d3;
+}
+
+
+.navbar ul {
+
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+    font-size: 1em;
+    
+}
+
+.navbar li {
+
+    display: inline-block;
+    padding: 5px;
+  }
+
+.navbar a {
+
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(146, 144, 144);
+}
+
+.derechos-reservados1 {
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:rgb(89, 91, 168);
+  color: rgb(229, 233, 239);
+}
+
