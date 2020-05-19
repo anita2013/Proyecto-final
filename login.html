@@ -5,10 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link href="./css/style.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 
 <body>
+    <nav class="navbar navbar-dark micolor bg-success navbar-expand-lg sticky-top">
+        <a class="navbar-brand" href="#">
+            <img src="#" width="40" height="40" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" href="#">Productos</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item estado text-primary" href="#">Hombres</a>
+                        <a href="#" class=" dropdown-item estado text-primary" href="#">Mujeres</a>
+                        <a href="#" class="dropdown-item estado text-primary " href="#">Bio seguridad</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="./login.html" class="nav-link">Registro</a>
+                </li>
+            </ul>
+
+            <!--Barra de busqueda-->
+            <form class="busqueda">
+                <div class="search">
+                    <input type="text" class="searchTerm" placeholder="Busqueda">
+                    <button type="submit" class="searchButton">
+				<img src="./images/lupa.png" width="25" height="25" class="d-inline-block align-top" alt="">
+			</button>
+                    <img src="./images/carro-de-la-compra.png" width="40" height="30" class="d-inline-block align-top" alt="">
+                </div>
+
+            </form>
+        </div>
+        <div class="inicio-sesion" hidden>
+            <button href="#" type="button" class="btn " style="color:rgb(255, 255, 255); background-color:#595BA8 ;">Inicio</button>
+
+        </div>
+    </nav>
     <div class="container-sm">
         <div class="row">
             <ul class="center-block nav nav-pills mb-3 mx-0 mb-0 mt-1 col-12 d-flex justify-content-center" id="pills-tab" role="tablist">
@@ -27,7 +72,7 @@
                                 Iniciar Sesion
                             </div>
                             <div class="card-body">
-                                <form action="#" id="login" name="login" onsubmit="return validarLogin()">
+                                <form action="./index.html" id="login" name="login" onsubmit="return validarLogin()">
                                     <div class="form-group">
                                         <label for="usuario">Usuario</label>
                                         <input type="text" class="form-control" id="usuario" placeholder="Usuario" autofocus>
@@ -53,7 +98,7 @@
                                 Registro Nuevos Usuarios
                             </div>
                             <div class="card-body ">
-                                <form action="#" id="registro" name="registro" onsubmit="return validarRegistro()">
+                                <form action="./login.html" id="registro" name="registro" onsubmit="return validarRegistro()">
                                     <div class="row">
                                         <div class="col-xs-12 col-lg-6 form-group">
                                             <label for="name">Nombre</label>
