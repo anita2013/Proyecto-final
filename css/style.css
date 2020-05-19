@@ -16,7 +16,7 @@ background: linear-gradient(to right, #595BA8 0%, #8184E8 100%);
 
 .search {
   width: 100%;
-  right: 3%;
+  right: 25%;
   padding: 1%;
   position: relative;
   display: flex;
@@ -55,6 +55,13 @@ background: linear-gradient(to right, #595BA8 0%, #8184E8 100%);
   left: 50%;
   padding: 10px;
   
+}
+
+.inicio-sesion{
+
+ position: absolute;
+ top: 20px;
+ right:50px;
 }
 
 .social {
