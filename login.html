@@ -27,18 +27,18 @@
                                 Iniciar Sesion
                             </div>
                             <div class="card-body">
-                                <form>
+                                <form action="#" id="login" name="login" onsubmit="return validarLogin()">
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1 ">Usuario</label>
-                                        <input type="text" class="form-control" id="exampleInputEmail1 " aria-describedby="emailHelp" placeholder="Usuario">
+                                        <label for="usuario">Usuario</label>
+                                        <input type="text" class="form-control" id="usuario" placeholder="Usuario" autofocus>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputPassword1">Password</label>
-                                        <input type="password" class="form-control " id="exampleInputPassword1" placeholder="Password">
+                                        <label for="contrasena">Password</label>
+                                        <input type="password" class="form-control" id="contrasena" placeholder="Password">
                                     </div>
                                     <div class="form-group form-check text-left">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label " for="exampleCheck1 ">Recordarme</label>
+                                        <input type="checkbox" class="form-check-input" id="recordar">
+                                        <label class="form-check-label" for="recordar ">Recordarme</label>
                                     </div>
                                     <button type="submit" class="btn btn-primary ">Registrar</button>
                                 </form>
@@ -53,46 +53,63 @@
                                 Registro Nuevos Usuarios
                             </div>
                             <div class="card-body ">
-                                <form>
+                                <form action="#" id="registro" name="registro" onsubmit="return validarRegistro()">
                                     <div class="row">
                                         <div class="col-xs-12 col-lg-6 form-group">
-                                            <label for="exampleInputEmail1 ">Nombre</label>
-                                            <input type="text" class="form-control" id="exampleInputEmail1 " placeholder="Nombre">
+                                            <label for="name">Nombre</label>
+                                            <input type="text" class="form-control" id="name" placeholder="Nombre">
                                         </div>
                                         <div class="col-xs-12 col-lg-6 form-group">
-                                            <label for="exampleInputPassword1">Apellido</label>
-                                            <input type="text" class="form-control " id="exampleInputPassword1" placeholder="Apellido">
+                                            <label for="apellido">Apellido</label>
+                                            <input type="text" class="form-control " id="apellido" placeholder="Apellido">
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-xs-12 col-lg-6 form-group">
-                                            <label for="exampleInputEmail1 ">Nombre Usuario</label>
-                                            <input type="text" class="form-control" id="exampleInputEmail1 " placeholder="Usuario">
+                                            <label for="usuario">Nombre Usuario</label>
+                                            <input type="text" class="form-control" id="usuario" placeholder="Usuario">
                                         </div>
                                         <div class="col-xs-12 col-lg-6 form-group">
-                                            <label for="exampleInputPassword1">Fecha Nacimiento</label>
-                                            <input type="date" class="form-control " id="exampleInputPassword1" placeholder="Repetir Contraseña">
+                                            <label for="nacimiento">Fecha Nacimiento</label>
+                                            <input type="date" class="form-control " id="nacimiento" placeholder="Repetir Contraseña">
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-xs-12 col-lg-6 form-group">
-                                            <label for="exampleInputPassword1">Contraseña</label>
-                                            <input type="password" class="form-control " id="exampleInputPassword1" placeholder="Contraseña">
+                                            <label for="contrasena">Contraseña</label>
+                                            <input type="password" class="form-control " id="contrasena" placeholder="Contraseña">
                                         </div>
                                         <div class="col-xs-12 col-lg-6 form-group">
-                                            <label for="exampleInputPassword1">Repetir contraseña</label>
-                                            <input type="password" class="form-control " id="exampleInputPassword1" placeholder="Repetir Contraseña">
+                                            <label for="contrasena2">Repetir contraseña</label>
+                                            <input type="password" class="form-control " id="contrasena2" placeholder="Repetir Contraseña">
                                         </div>
                                     </div>
                                     <div class="form-group form-check text-left">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1 ">Acepto los terminos y condiciones.</label>
+                                        <input type="checkbox" class="form-check-input" id="terminos">
+                                        <label class="form-check-label" for="terminos ">Acepto los terminos y condiciones.</label>
                                     </div>
-                                    <button type="submit " class="btn btn-primary ">Registrar</button>
+                                    <button type="submit" class="btn btn-primary ">Registrar</button>
                                 </form>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="alerta" tabindex="-1" role="dialog" aria-labelledby="alerta" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Alerta!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body" id="mensaje-modal">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
                 </div>
             </div>
         </div>
@@ -104,6 +121,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous "></script>
+    <script src="./js/registro.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/moment-with-locales.min.js"></script>
 </body>
 
 </html>
