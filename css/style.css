@@ -112,11 +112,6 @@ a.estado:hover, a.estado:active {
   color: rgb(229, 233, 239);
 }
 
-
-
-
-=======
-a.estado:hover,
-a.estado:active {
+a.estado:hover,a.estado:active {
     background: rgb(209, 123, 213);
 }
