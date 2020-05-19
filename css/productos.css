@@ -1,0 +1,20 @@
+:root {
+    padding: 1em;
+    background-color: #E5E9EF;
+}
+
+
+.colorprincial {
+    color: #595BA8;
+}
+
+.colorsecundariofondo {
+    background-color: #8184E8;
+    border: solid 1px #E5E9EF;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.colorfondo {
+    background-color: #E5E9EF;
+}
