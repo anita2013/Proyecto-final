@@ -26,7 +26,10 @@ function validarLogin() {
         user = JSON.parse(user)
         if (user.usuario == personas.usuario && user.contrasena == personas.contrasena) {
             let alerta = document.getElementById('mensaje-modal')
-            let sesion = true
+            let sesion = {
+                log: true,
+                usuario: personas.usuario
+            }
             mensaje = "Inicio de sesion correcto!"
             alerta.innerHTML = mensaje
             $('#alerta').modal('show')

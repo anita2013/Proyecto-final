@@ -52,7 +52,10 @@ function validarRegistro() {
         alerta.innerHTML = mensaje
         $('#alerta').modal('show')
     } else {
-        let sesion = false
+        let sesion = {
+            log: false,
+            usuario: ''
+        }
         localStorage.setItem(personas.usuario, JSON.stringify(personas))
         localStorage.setItem('sesion', JSON.stringify(sesion))
     }
