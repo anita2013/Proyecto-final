@@ -16,17 +16,17 @@
 /*boton busqueda*/
 .search {
     width: 100%;
-    right: 30%;
+    right: 20%;
     padding: 1%;
     position: relative;
     display: flex;
 }
 
 .searchTerm {
-    width: 70%;
+    width: 50%;
     border: 1px solid #595BA8;
     border-right: none;
-    padding: 10px;
+    padding: 5px;
     height: 30px;
     border-radius: 10px 0 0 10px;
     outline: none;
@@ -38,7 +38,7 @@
 }
 
 .searchButton {
-    width: 40px;
+    width: 30px;
     height: 30px;
     border: 1px solid #595BA8;
     background: #595BA8;
@@ -50,8 +50,7 @@
 }
 
 .busqueda {
-    width: 30%;
-    top: 50%;
+    width: 25%;
     left: 50%;
     padding: 10px;
 }
@@ -71,6 +70,23 @@
 a.estado:hover, a.estado:active {
   background: rgb(209, 123, 213);
  
+}
+
+.carrito{
+
+  color:rgb(255, 255, 255); 
+  font-size: 30px;
+  position: relative;
+  bottom: 30%;
+}
+
+.lupa{
+
+  color:rgb(255, 255, 255); 
+  font-size: 20px;
+  position: relative;
+  right: 12px;
+ bottom: 12px;
 }
 
 .contenido-principal{
