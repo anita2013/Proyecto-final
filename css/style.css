@@ -58,7 +58,7 @@
 
 .inicio-sesion {
     position: absolute;
-    top: 20px;
+    top: 15px;
     right: 73px;
 }
 
@@ -78,7 +78,7 @@ a.estado:hover, a.estado:active {
   color:rgb(255, 255, 255); 
   font-size: 30px;
   position: relative;
-  bottom: 20%;
+  bottom: 10%;
 }
 
 .lupa{
@@ -86,8 +86,8 @@ a.estado:hover, a.estado:active {
   color:rgb(255, 255, 255); 
   font-size: 20px;
   position: relative;
-  right: 12px;
- bottom: 12px;
+  right: 10px;
+ bottom: 10px;
 }
 
 .contenido-principal{
@@ -97,7 +97,7 @@ margin: 30px;
 
 /*FOOTER - redes sociales*/
     
-    .derechos-reservados {
+.derechos-reservados {
    display: flex;
   justify-content: center;
    background: #d6d4d4;
@@ -123,7 +123,7 @@ margin: 30px;
 
     display: inline-block;
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
     color: rgb(146, 144, 144);
 }
 
@@ -143,9 +143,46 @@ margin: 30px;
   align-items: center;
   background-color:rgb(89, 91, 168);
   color: rgb(229, 233, 239);
+  
 }
 
-
-a.estado:hover,a.estado:active {
-    background: rgb(209, 123, 213);
+.titulo {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  background-color:rgb(89, 91, 168);
+  color: rgb(229, 233, 239);
 }
+
+.derechos-reservados2 ul {
+
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.derechos-reservados2 li {
+    display: inline-block;
+    padding: 5px;
+  }
+
+.derechos-reservados2 a {
+
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(247, 244, 242);
+    padding: 10px;
+
+}
+
+.derechos-reservados2 li:hover {
+    color: rgb(209, 123, 213);
+    cursor: pointer;
+}
+
+.selected {
+      border-bottom: solid 1px rgb(229, 233, 239);
+}
+
