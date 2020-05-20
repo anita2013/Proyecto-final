@@ -5,11 +5,15 @@
     background: linear-gradient(to right, #595BA8 0%, #8184E8 100%);
 }
 
+
+/*Tamaño carrusel*/
+
 .micarrusel {
     width: 100%;
     max-height: 350px;
 }
 
+/*boton busqueda*/
 .search {
     width: 100%;
     right: 30%;
@@ -69,14 +73,17 @@ a.estado:hover, a.estado:active {
  
 }
 
+.contenido-principal{
+margin: 30px;
+}
+
 
 /*FOOTER - redes sociales*/
     
     .derechos-reservados {
    display: flex;
   justify-content: center;
-  align-items: center;
-  background: #d4d3d3;
+   background: #d6d4d4;
 }
 
 
@@ -108,9 +115,19 @@ a.estado:hover, a.estado:active {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color:rgb(255, 255, 255);
+  color: rgb(146, 144, 144);
+}
+
+.derechos-reservados2 {
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color:rgb(89, 91, 168);
   color: rgb(229, 233, 239);
 }
+
 
 a.estado:hover,a.estado:active {
     background: rgb(209, 123, 213);
