@@ -53,7 +53,7 @@ function validarRegistro() {
         $('#alerta').modal('show')
     } else {
         let sesion = {
-            log: false,
+            loggin: false,
             usuario: ''
         }
         localStorage.setItem(personas.usuario, JSON.stringify(personas))
