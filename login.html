@@ -11,7 +11,35 @@
 </head>
 
 <body style="background:#d4d3d3">
-
+    <!--Carrusel promociones-->
+    <section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/baner01.jpeg" class="d-block w-100 micarrusel" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/baner02.jpeg" class="d-block w-100 micarrusel" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/baner03.jpeg" class="d-block w-100 micarrusel" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </section>
 
     <!--Barra de navegación-->
     <nav class="navbar navbar-dark micolor bg-success navbar-expand-lg sticky-top">
@@ -29,16 +57,11 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="./index.html">Home</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" href="#">Productos</a>
-                    <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item estado text-primary" href="#">Hombres</a>
-                        <a href="#" class=" dropdown-item estado text-primary" href="#">Mujeres</a>
-                        <a href="#" class="dropdown-item estado text-primary " href="#">Bio seguridad</a>
-                    </div>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./productos.html">Productos</a>
                 </li>
                 <li class="nav-item ">
-                    <a onclick="botonSesion()" id="signOut" class="nav-link " hidden>Registro</a>
+                    <a onclick="botonSesion()" id="signOut" class="nav-link ">Registro</a>
                 </li>
             </ul>
 
@@ -55,9 +78,10 @@
             </form>
         </div>
         <div class="inicio-sesion ">
-            <button onclick="botonSesion()" id="user" type="button " class="btn " style="color:rgb(255, 255, 255); background-color:#595BA8 ; " hidden>Entrar</button>
+            <button onclick="botonSesion()" id="user" type="button " class="btn " style="color:rgb(255, 255, 255); background-color:#595BA8 ; ">Entrar</button>
         </div>
     </nav>
+
 
     <div class="container-sm pt-4">
         <div class="row">
@@ -167,7 +191,7 @@
 
     <!--Footer-->
 
-    <footer class="derechos-reservados">
+   <footer class="derechos-reservados">
         <nav class="navbar">
             <ul>
                 <li>
@@ -192,12 +216,19 @@
         <small>Copyright © 2020</small>
     </footer>
 
-
-    <footer class="derechos-reservados2">
-
-        <p>Botones</p>
+    <footer class="derechos-reservados1 titulo">
+        <small>Mapa de navegación</small>
     </footer>
+    <footer class="derechos-reservados2">
+        <ul>
+            <li><small href="#" >Home</small> </li>
+            <li><small href="#">Productos</small> </li>
+            <li><small href="#"class="selected">Registro</small> </li>
+        </ul>
 
+        </div>
+
+    </footer>
 
     <!--Icono de ws-->
     <section class="social">
