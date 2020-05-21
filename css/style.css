@@ -125,16 +125,17 @@ a.estado:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 255, 255);
-    color: rgb(146, 144, 144);
+    background-color: rgb(89, 91, 168);
+    color: rgb(229, 233, 239);
+    
 }
 
 .derechos-reservados2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(89, 91, 168);
-    color: rgb(229, 233, 239);
+    background-color: rgb(255, 255, 255);
+    color: rgb(89, 91, 168);
 }
 
 .titulo {
