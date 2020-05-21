@@ -1,5 +1,6 @@
 function validarLogin() {
     let validado = true
+    let validado2 = false
     let mensaje = 'Su usuario o contrasena son erroneos <br>'
     let alerta = document.getElementById('mensaje-modal')
     let usuarios = document.forms['login']
@@ -27,15 +28,16 @@ function validarLogin() {
         if (user.usuario == personas.usuario && user.contrasena == personas.contrasena) {
             let alerta = document.getElementById('mensaje-modal')
             let sesion = {
-                log: true,
+                loggin: true,
                 usuario: personas.usuario
             }
             localStorage.setItem('sesion', JSON.stringify(sesion))
+            validado2 = true
         } else {
             let alerta = document.getElementById('mensaje-modal')
             alerta.innerHTML = mensaje
             $('#alerta').modal('show')
         }
     }
-    return validado
+    return validado2
 }
