@@ -4,12 +4,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final</title>
     <link href="./css/style.css" rel="stylesheet">
-    <title>Proyecto final</title>
+    <script src="https://kit.fontawesome.com/d2f50ef51c.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
 </head>
 
-<body>
-    <h1>PROYECTO FINAL</h1>
+<body style="background:#d4d3d3">
+    <!--Carrusel promociones-->
+    <section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/baner01.jpeg" class="d-block w-100 micarrusel" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/baner02.jpeg" class="d-block w-100 micarrusel" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/baner03.jpeg" class="d-block w-100 micarrusel" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </section>
+
+    <!--Barra de navegación-->
+    <nav class="navbar navbar-dark micolor bg-success navbar-expand-lg sticky-top">
+        <a class="navbar-brand" href="#">
+            <img src="./images/logo.svg" width="40" height="40" class="d-inline-block align-top" alt="">
+        </a>
+
+
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./productos.html">Productos</a>
+                </li>
+                <li class="nav-item ">
+                    <a onclick="botonSesion()" id="signOut" class="nav-link ">Registro</a>
+                </li>
+            </ul>
+
+            <!--Barra de busqueda-->
+            <form class="busqueda ">
+                <div class="search ">
+                    <input type="text " class="searchTerm " placeholder="Busqueda ">
+                    <button type="submit " class="searchButton ">
+                     
+                    <a href="#"><i class="fas fa-search lupa"></i></a>
+                    </button>
+                    <a href="#"><i class="fas fa-shopping-cart carrito"></i> </a>
+                </div>
+            </form>
+        </div>
+        <div class="inicio-sesion ">
+            <button onclick="botonSesion()" id="user" type="button " class="btn " style="color:rgb(255, 255, 255); background-color:#595BA8 ; ">Entrar</button>
+        </div>
+    </nav>
+
+
+    <!--Contenido principal-->
+    <div class="contenido-principal">
+        <div class="row row-cols-1 row-cols-md-3">
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1507399076055-c021699485c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2166&q=80" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">HOMBRES</h5>
+                        <p class="card-text" ><b>¿Buscas soluciones sencillas y fáciles para el cuidado masculino?</b> Dale a la piel el cuidado que merece con los productos y consejos de Bit linea masculina.
+Establecer una rutina masculina efectiva de cuidado es simple - con los productos y técnicas adecuadas, puedes salir de tu casa sintiéndote bien cada mañana.Tampoco tiene que ser muy elaborado. Un desodorante que es duro contra el sudor (pero no sobre la piel) puede ser todo lo que necesitas para llevar tu rutina al siguiente, nivel más eficaz.
+Explora los productos de cuidado de Bit tu marca personal   aprovecha los consejos En general, lo que más se consume el  sector masculino, seguido de aseo , cuidado del cabello, protección de la piel  y los consumidores jóvenes son el principal objetivo, pero el mercado masculino se está volviendo cada vez más atractivo.
+el potencial está en el segmento masculino. En Colombia por cultura, el hombre se preocupa por su apariencia y los productos que el mercado ofrece en la actualidad ya no son suficientes. Nosotros como industria debemos estar en la capacidad de ofrecerles un abanico de alternativas que les permita satisfacer sus necesidades
+Nuestra marca Bit en el segmento de desodorante en las 2 prestaciones que manejamos son antitranspirante - aerosol y su crema de afeitar con aloe vera.
+Cerca de 40% de la industria se encuentra concentrada en Bogotá, 30% en Antioquia y otro 30% en el Valle. Según la capital del país tiene un gran potencial en perfumería, Antioquia en maquillaje y Cali en el segmento de cuidado personal.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1522108098940-de49801b5b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2098&q=80" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">MUJERES</h5>
+                        <p class="card-text">La percepción de la belleza influye en el nivel de satisfacción personal de la vida de las mujeres, para bien y para mal, son muchas  cada vez más jóvenes, las que se ven influenciadas por los canones de belleza que se muestran en los medios de comunicación. Sin embargo sentirse guapa o verse bella es más fácil y nuestra linea Bit que tratar de convertirse en estereotipo de 'mujer de anuncio', ya que depende sobre todo de la autoestima y el estado de ánimo.
+Cuando se habla de belleza, también se habla de lo físico, pero sobre todo se trata de la personalidad, de la manera de comunicarse,  de verse uno mismo, de la confianza.<b> "El cambio está en nosotros, pequeñas modificaciones que llevan a mejorar la confianza en nosotros mismos y la autoestima</b>, eso proyecta belleza. Cuesta un esfuerzo, pero si la persona pone un poco de su parte, al final es un tema de rutina, pequeñas modificaciones llegan a mejorar la confianza"
+El shampoo no es un producto que simplemente 'limpia'. Es por eso que con los shampoos de Bit Nutritive  Solutions, el cabello obtiene la nutrición que necesita, junto con a su suave poder limpiador
+Un cabello hermoso tiene poder. Todos sabemos como el cabello puede hacerte sentir: cuando es brillante y saludable, te sientes segura y orgullosa. Para lograr ese sentimiento todos los días, nos hemos asegurado de que nuestros shampoos nutran y restauren el cabello desde adentro, lavada tras lavada, haciendo que el cabello se mantenga sano a largo plazo.  </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1505919618793-51ca43604ff5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">BIOSEGURIDAD</h5>
+                        <p class="card-text">Los pilares básicos de un programa de bioseguridad son: la ubicación de la explotación en relación a otras explotaciones vecinas, individualización de las barreras físicas que separan la explotación del exterior, un apropiado programa de cuarentena y/o aislamiento de los animales al entrar en la explotación y un riguroso control de los medios de transporte.
+Desafortunadamente la realidad cotidiana de una empresa debe enfrentarse a situaciones generadas a partir de decisiones que se tomaron en un momento en que el conocimiento en este ámbito era menor al actual, por lo que, ante los escenarios que nos encontramos, <b>debemos gestionar las explotaciones con la mayor eficacia higiénico-sanitaria.</b>
+En los sistemas de producción a gran escala podemos encontrarnos frente a empresas basadas en una producción propia o bien empresas basadas en un sistema de integración. En el primer caso es más fácil aplicar medidas de bioseguridad interna que en el segundo; por el contrario la producción integrada permite separar más fácilmente las fases productivas y por tanto mejorar la eficacia del vacío sanitario.
+Nuestra compañía Bit ha producido en Standard de alta calidad los mejores productos para enfrentar grandes retos que nos presenta esta actualidad por eso hemos diseñado nuestro gel antibacterial  y jabón  antibacterial Bit la marca que siempre te acompaña...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Footer-->
+
+
+    <footer class="derechos-reservados">
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/login?lang=es" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/?hl=es-la" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            </navbar>
+    </footer>
+    <footer class="derechos-reservados1">
+        <small>Copyright © 2020</small>
+    </footer>
+
+    <footer class="derechos-reservados1 titulo">
+        <small>Mapa de navegación</small>
+    </footer>
+    <footer class="derechos-reservados2">
+        <ul>
+            <li><small href="#" class="selected">Home</small> </li>
+            <li><small href="#">Productos</small> </li>
+            <li><small href="#">Registro</small> </li>
+        </ul>
+
+        </div>
+
+    </footer>
+
+    <!--Icono de ws-->
+    <section class="social">
+        <a href="https://wa.me/573154444445" target="_blank" rel="noopener noreferrer">
+            <img src="./images/whatsapp.png" alt="whatsapp" width="50">
+        </a>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+    <script src="./js/inicio.js"></script>
+    <script>
+        inicioSesion()
+    </script>
 </body>
 
 </html>

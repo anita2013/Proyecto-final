@@ -1,3 +1,175 @@
-body{
-    background-color: rgb(31, 134, 138);
+.micolor {
+    background: #595BA8;
+    background: -moz-linear-gradient(left, #595BA8 0%, #8184E8 100%);
+    background: -webkit-linear-gradient(left, #595BA8 0%, #8184E8 100%);
+    background: linear-gradient(to right, #595BA8 0%, #8184E8 100%);
+}
+
+
+/*Tamaño carrusel*/
+
+.micarrusel {
+    width: 100%;
+    max-height: 400px;
+}
+
+
+/*boton busqueda*/
+
+.search {
+    width: 100%;
+    right: 20%;
+    padding: 1%;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    width: 50%;
+    border: 1px solid #595BA8;
+    border-right: none;
+    padding: 5px;
+    height: 30px;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchTerm:focus {
+    color: #595BA8;
+}
+
+.searchButton {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #595BA8;
+    background: #595BA8;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.busqueda {
+    width: 25%;
+    left: 50%;
+    padding: 10px;
+}
+
+.inicio-sesion {
+    position: absolute;
+    top: 15px;
+    right: 73px;
+}
+
+.social {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+a.estado:hover,
+a.estado:active {
+    background: rgb(209, 123, 213);
+}
+
+.carrito {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    position: relative;
+    bottom: 10%;
+}
+
+.lupa {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    position: relative;
+    right: 10px;
+    bottom: 10px;
+}
+
+.contenido-principal {
+    margin: 30px;
+}
+
+
+/*FOOTER - redes sociales*/
+
+.derechos-reservados {
+    display: flex;
+    justify-content: center;
+    background: #d6d4d4;
+}
+
+.navbar ul {
+    margin: 0;
+    list-style-type: none;
+    font-size: 1em;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.navbar a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+    color: rgb(146, 144, 144);
+}
+
+.derechos-reservados1 {
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(146, 144, 144);
+}
+
+.derechos-reservados2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(89, 91, 168);
+    color: rgb(229, 233, 239);
+}
+
+.titulo {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(89, 91, 168);
+    color: rgb(229, 233, 239);
+}
+
+.derechos-reservados2 ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.derechos-reservados2 li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.derechos-reservados2 a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(247, 244, 242);
+    padding: 10px;
+}
+
+.derechos-reservados2 li:hover {
+    color: rgb(209, 123, 213);
+    cursor: pointer;
+}
+
+.selected {
+    border-bottom: solid 1px rgb(229, 233, 239);
 }
