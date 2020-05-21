@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-body{
-    background-color: rgb(31, 134, 138);
-}
-
-
-=======
-
-
 .micolor {
     background: #595BA8;
     background: -moz-linear-gradient(left, #595BA8 0%, #8184E8 100%);
@@ -182,4 +173,3 @@ a.estado:active {
 .selected {
     border-bottom: solid 1px rgb(229, 233, 239);
 }
->>>>>>> dd6dabc8add375af4e59da5e76c8150e03554647
