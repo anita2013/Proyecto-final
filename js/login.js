@@ -30,9 +30,6 @@ function validarLogin() {
                 log: true,
                 usuario: personas.usuario
             }
-            mensaje = "Inicio de sesion correcto!"
-            alerta.innerHTML = mensaje
-            $('#alerta').modal('show')
             localStorage.setItem('sesion', JSON.stringify(sesion))
         } else {
             let alerta = document.getElementById('mensaje-modal')

@@ -55,28 +55,17 @@
 
         <div class="collapse navbar-collapse" id="navbarMain">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="./index.html">Home</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" href="#">Productos</a>
+                <li class="nav-item active">
+                    <a href="./productos.html" class="nav-link">Productos</a>
                 </li>
                 <li class="nav-item ">
                     <a onclick="botonSesion()" id="signOut" class="nav-link">Registro</a>
                 </li>
             </ul>
 
-            <!--Barra de busqueda-->
-            <form class="busqueda ">
-                <div class="search ">
-                    <input type="text " class="searchTerm " placeholder="Busqueda ">
-                    <button type="submit " class="searchButton ">
-                     
-                    <a href="#"><i class="fas fa-search lupa"></i></a>
-                    </button>
-                    <a href="#"><i class="fas fa-shopping-cart carrito"></i> </a>
-                </div>
-            </form>
         </div>
         <div class="inicio-sesion ">
             <button onclick="botonSesion()" id="user" type="button " class="btn " style="color:rgb(255, 255, 255); background-color:#595BA8 ; ">Entrar</button>
@@ -360,7 +349,6 @@
                 </li>
             </ul>
             </navbar>
-
     </footer>
     <footer class="derechos-reservados1">
         <small>Copyright © 2020</small>
@@ -371,9 +359,9 @@
     </footer>
     <footer class="derechos-reservados2">
         <ul>
-            <li><small href="#" c>Home</small> </li>
-            <li><small href="#" lass="selected">Productos</small> </li>
-            <li><small href="#">Registro</small> </li>
+            <li><small><a href="./index.html">Home</a> </small></li>
+            <li><small><a href="./productos.html" class="selected">Productos</a></small></li>
+            <li><small><a href="./login.html" >Registro</a></small> </li>
         </ul>
 
         </div>
