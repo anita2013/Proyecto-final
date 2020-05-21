@@ -1,11 +1,18 @@
 function inicioSesion() {
-    var sesion = localStorage.getItem('sesion')
-    sesion = JSON.parse(sesion)
+    try {
+        var sesion = localStorage.getItem('sesion')
+        sesion = JSON.parse(sesion)
+    } catch {
+        var sesion = {
+            log: false,
+            usuario: ''
+        }
+    }
     const dir = (window.location.pathname).includes('login.html')
     if (dir == false) {
         if (sesion.log == true) {
             try {
-                let alerta = document.getElementById('user')
+                var alerta = document.getElementById('user')
                 mensaje = sesion.usuario
                 alerta.innerHTML = mensaje
             } catch {
@@ -35,14 +42,20 @@ function inicioSesion() {
 
 
 function botonSesion() {
-    var sesion = localStorage.getItem('sesion')
-    sesion = JSON.parse(sesion)
-
+    try {
+        var sesion = localStorage.getItem('sesion')
+        sesion = JSON.parse(sesion)
+    } catch {
+        var sesion = {
+            log: false,
+            usuario: ''
+        }
+    }
     const dir = (window.location.pathname).includes('login.html')
     if (dir == false) {
         if (sesion.log == true) {
             try {
-                let sesion = {
+                var sesion = {
                     log: false,
                     usuario: ''
                 }
