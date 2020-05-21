@@ -1,0 +1,76 @@
+@import url(https://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+    font-family: 'entypo', sans-serif;
+
+}
+
+:root {
+    background-color: #E5E9EF;
+    padding: 1em;
+}
+
+
+.colorprincial {
+    color: #595BA8;
+}
+
+.colorrosa {
+    color: #D17BD5;
+    margin: 0;
+}
+
+.colorsecundariofondo {
+    background-color: #BBBCEF;
+    border-right: solid 1px #E5E9EF;
+    border-top: solid 1px #E5E9EF;
+    border-left: solid 1px #E5E9EF;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.colorfondo {
+    background-color: #E5E9EF;
+}
+
+.productoscaja {
+    padding: 10px;
+    margin-bottom: 1em;
+}
+
+
+
+.textogrande {
+    z-index: 1;
+    font-size: 50px;
+}
+
+.circulo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+}
+
+.ubicacioncarro {
+    position: absolute;
+    bottom: -15px;
+    right: 1px;
+}
+
+.boton-1:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.espacio {
+    padding: 1em;
+}
+
+.margen-derecha {
+    margin-right: 20px;
+}
